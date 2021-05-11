@@ -1,0 +1,21 @@
+<h1>贊助頁面</h1>
+
+<%= form_for(@order) do |form| %>
+<div>
+<%= form.label :姓名 %>
+<%= form.text_field :name %>
+</div>
+
+<div>
+<%= form.label :贊助頻道 %>
+<%= form.text_field :chanel %>
+</div>
+
+<div>
+<%= form.label :金額 %>
+<%= form.text_field :amount %>
+</div>
+
+<%= form.submit %>
+
+<% end %>

@@ -2,7 +2,7 @@
 
 <%= form_for(@order) do |form| %>
 <div>
-<%= form.label :姓名 %>
+<%= form.label :贊助人姓名 %>
 <%= form.text_field :name %>
 </div>
 
@@ -12,10 +12,10 @@
 </div>
 
 <div>
-<%= form.label :金額 %>
+<%= form.label :贊助金額 %>
 <%= form.text_field :amount %>
 </div>
 
-<%= form.submit %>
+<%= form.submit :確定贊助%>
 
 <% end %>

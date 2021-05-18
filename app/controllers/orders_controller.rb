@@ -10,11 +10,7 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
   
-    if @order.save
-      redirect_to orders_path, notice: 'Order Created !'
-    else
-      render :new
-    end
+    render :create if @order.save
   end 
   
   

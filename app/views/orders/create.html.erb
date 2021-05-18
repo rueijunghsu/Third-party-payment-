@@ -1,0 +1,21 @@
+<form id="123" action="https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5" method="post">
+
+  <input type="hidden" name="MerchantID" value="2000132">
+  <input type="hidden" name="MerchantTradeNo" value="Ray8085">
+  <input type="hidden" name="MerchantTradeDate" value="2021/05/17 11:40:00"> 
+  <input type="hidden" name="PaymentType" value="aio">
+  <input type="hidden" name="TotalAmount" value="5000">
+  <input type="hidden" name="TradeDesc" value="123">
+  <input type="hidden" name="ItemName" value="donate">
+  <input type="hidden" name="ReturnURL" value="http://localhost:3000/orders/new">
+  <input type="hidden" name="ChoosePayment" value="Credit">
+  <input type="hidden" name="CheckMacValue" value="5592326F8B7B728937B71F2922929775C2D29A94C0B094A0324F112BC2C9282F">
+  <input type="hidden" name="EncryptType" value="1">
+
+</form>
+
+<script>
+  (function() {
+    document.getElementById("123").submit()
+  })()
+</script>
